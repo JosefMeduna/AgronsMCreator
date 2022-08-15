@@ -55,6 +55,9 @@ public class ModExploreScreen extends AbstractContainerScreen<ModExploreMenu> {
 		RenderSystem.setShaderTexture(0, new ResourceLocation("agrons:textures/screens/webbrowser.png"));
 		this.blit(ms, this.leftPos + 6, this.topPos + 5, 0, 0, 16, 16, 16, 16);
 
+		RenderSystem.setShaderTexture(0, new ResourceLocation("agrons:textures/screens/agrons-_logo.png"));
+		this.blit(ms, this.leftPos + 10, this.topPos + 63, 0, 0, 128, 128, 128, 128);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -75,7 +78,10 @@ public class ModExploreScreen extends AbstractContainerScreen<ModExploreMenu> {
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, "Minenet explorer", 22, 8, -12829636);
-		this.font.draw(poseStack, "Mod agrons is about future and farming.", 90, 70, -65536);
+		this.font.draw(poseStack, "Mod agrons is about future and farming.", 141, 86, -65536);
+		this.font.draw(poseStack, "Agrons", 141, 64, -16769793);
+		this.font.draw(poseStack, "mod", 176, 64, -16723447);
+		this.font.draw(poseStack, "------------", 140, 75, -12829636);
 	}
 
 	@Override

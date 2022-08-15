@@ -4,7 +4,7 @@
   "definition": {
     "name": "Agrons - Guns",
     "icon": {
-      "value": "CUSTOM:Trash"
+      "value": "CUSTOM:LaserGun"
     },
     "showSearch": false
   }

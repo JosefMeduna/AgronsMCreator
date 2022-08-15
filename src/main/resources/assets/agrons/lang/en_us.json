@@ -1,12 +1,18 @@
 {
   "block.agrons.trash": "Trash",
-  "block.agrons.tetstblockda": "Tetstblockda",
-  "block.agrons.trashblock": "Trashblock",
   "block.agrons.metalblock": "Metal block",
   "itemGroup.tabagrons": "Agrons",
   "biome.agrons.trashworld": "Trashworld",
   "itemGroup.tabagrons_guns": "Agrons - Guns",
   "item.agrons.pif_puf_laser": "Title.projectile.laser",
+  "block.agrons.computer": "Computer",
+  "block.agrons.tetstblockda": "Tetstblockda",
+  "block.agrons.trashblock": "Trashblock",
+  "item.agrons.robo_farmar_spawn_egg": "Robo Farmář Spawn Egg",
+  "item.agrons.ozubene_kolo": "Ozubene Kolo",
+  "entity.agrons.robo_farmar": "Robo Farmář",
+  "item.agrons.robo_kohout_spawn_egg": "Robo Kohout Spawn Egg",
   "item.agrons.laser_gun": "Laser Gun",
-  "block.agrons.computer": "Computer"
+  "item.agrons.trashitem": "Plast",
+  "entity.agrons.robo_kohout": "Robo Kohout"
 }

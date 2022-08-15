@@ -6,7 +6,9 @@
     "texture": "lejzr_gun",
     "customModelName": "Normal",
     "name": "Laser Gun",
-    "specialInfo": [],
+    "specialInfo": [
+      "Pif"
+    ],
     "creativeTab": {
       "value": "CUSTOM:AgronsGuns"
     },
