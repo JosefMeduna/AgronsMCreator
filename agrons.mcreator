@@ -151,6 +151,38 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "trashblock"
+    },
+    {
+      "name": "Agrons",
+      "type": "tab",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "agrons"
+    },
+    {
+      "name": "AgronsGuns",
+      "type": "tab",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "agrons_guns"
+    },
+    {
+      "name": "PifPufLaser",
+      "type": "item",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pif_puf_laser"
+    },
+    {
+      "name": "LaserGun",
+      "type": "rangeditem",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser_gun"
     }
   ],
   "variable_elements": [],
@@ -161,7 +193,11 @@
       "block.agrons.tetstblockda": "Tetstblockda",
       "block.agrons.trashblock": "Trashblock",
       "block.agrons.metalblock": "Metal block",
+      "itemGroup.tabagrons": "Agrons",
       "biome.agrons.trashworld": "Trashworld",
+      "itemGroup.tabagrons_guns": "Agrons - Guns",
+      "item.agrons.pif_puf_laser": "Title.projectile.laser",
+      "item.agrons.laser_gun": "Laser Gun",
       "block.agrons.computer": "Computer"
     }
   },

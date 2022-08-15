@@ -3,6 +3,10 @@
   "block.agrons.tetstblockda": "Tetstblockda",
   "block.agrons.trashblock": "Trashblock",
   "block.agrons.metalblock": "Metal block",
+  "itemGroup.tabagrons": "Agrons",
   "biome.agrons.trashworld": "Trashworld",
+  "itemGroup.tabagrons_guns": "Agrons - Guns",
+  "item.agrons.pif_puf_laser": "Title.projectile.laser",
+  "item.agrons.laser_gun": "Laser Gun",
   "block.agrons.computer": "Computer"
 }

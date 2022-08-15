@@ -26,8 +26,10 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.kapusta.agrons.init.AgronsModTabs;
 import net.kapusta.agrons.init.AgronsModParticleTypes;
 import net.kapusta.agrons.init.AgronsModItems;
+import net.kapusta.agrons.init.AgronsModEntities;
 import net.kapusta.agrons.init.AgronsModBlocks;
 import net.kapusta.agrons.init.AgronsModBiomes;
 
@@ -45,10 +47,11 @@ public class AgronsMod {
 	private static int messageID = 0;
 
 	public AgronsMod() {
-
+		AgronsModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		AgronsModBlocks.REGISTRY.register(bus);
 		AgronsModItems.REGISTRY.register(bus);
+		AgronsModEntities.REGISTRY.register(bus);
 
 		AgronsModBiomes.REGISTRY.register(bus);
 		AgronsModParticleTypes.REGISTRY.register(bus);
