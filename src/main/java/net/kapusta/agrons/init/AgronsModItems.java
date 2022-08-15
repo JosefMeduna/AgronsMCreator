@@ -26,7 +26,7 @@ public class AgronsModItems {
 	public static final RegistryObject<Item> TRASH = block(AgronsModBlocks.TRASH, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> TETSTBLOCKDA = block(AgronsModBlocks.TETSTBLOCKDA, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> COMPUTER = block(AgronsModBlocks.COMPUTER, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> METALBLOCK = block(AgronsModBlocks.METALBLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> METALBLOCK = block(AgronsModBlocks.METALBLOCK, AgronsModTabs.TAB_AGRONS);
 	public static final RegistryObject<Item> TRASHBLOCK = block(AgronsModBlocks.TRASHBLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> LASER_GUN = REGISTRY.register("laser_gun", () -> new LaserGunItem());
 	public static final RegistryObject<Item> TRASHITEM = REGISTRY.register("trashitem", () -> new TrashitemItem());
