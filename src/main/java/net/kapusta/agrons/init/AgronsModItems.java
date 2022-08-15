@@ -35,6 +35,8 @@ public class AgronsModItems {
 	public static final RegistryObject<Item> OZUBENE_KOLO = REGISTRY.register("ozubene_kolo", () -> new OzubeneKoloItem());
 	public static final RegistryObject<Item> ROBO_FARMAR = REGISTRY.register("robo_farmar_spawn_egg",
 			() -> new ForgeSpawnEggItem(AgronsModEntities.ROBO_FARMAR, -12303292, -5287680, new Item.Properties().tab(AgronsModTabs.TAB_AGRONS)));
+	public static final RegistryObject<Item> ROBO_PRASE = REGISTRY.register("robo_prase_spawn_egg",
+			() -> new ForgeSpawnEggItem(AgronsModEntities.ROBO_PRASE, -12040120, -65310, new Item.Properties().tab(AgronsModTabs.TAB_AGRONS)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
+import net.kapusta.agrons.client.renderer.RoboPraseRenderer;
 import net.kapusta.agrons.client.renderer.RoboKohoutRenderer;
 import net.kapusta.agrons.client.renderer.RoboFarmarRenderer;
 
@@ -21,5 +22,6 @@ public class AgronsModEntityRenderers {
 		event.registerEntityRenderer(AgronsModEntities.LASER_GUN.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(AgronsModEntities.ROBO_KOHOUT.get(), RoboKohoutRenderer::new);
 		event.registerEntityRenderer(AgronsModEntities.ROBO_FARMAR.get(), RoboFarmarRenderer::new);
+		event.registerEntityRenderer(AgronsModEntities.ROBO_PRASE.get(), RoboPraseRenderer::new);
 	}
 }
