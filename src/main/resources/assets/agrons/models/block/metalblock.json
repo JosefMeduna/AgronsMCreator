@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "agrons:blocks/trashblock",
+    "up": "agrons:blocks/trashblock",
+    "north": "agrons:blocks/trashblock",
+    "east": "agrons:blocks/trashblock",
+    "south": "agrons:blocks/trashblock",
+    "west": "agrons:blocks/trashblock",
+    "particle": "agrons:blocks/trashblock"
+  }
+}

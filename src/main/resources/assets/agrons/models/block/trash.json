@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "agrons:blocks/tetsblock",
+    "up": "agrons:blocks/tetsblock",
+    "north": "agrons:blocks/tetsblock",
+    "east": "agrons:blocks/tetsblock",
+    "south": "agrons:blocks/tetsblock",
+    "west": "agrons:blocks/tetsblock",
+    "particle": "agrons:blocks/tetsblock"
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "mod_elements": [
+    {
+      "name": "Trash",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trash"
+    },
+    {
+      "name": "Tetstblockda",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tetstblockda"
+    },
+    {
+      "name": "Trashworld",
+      "type": "biome",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trashworld"
+    },
+    {
+      "name": "Fuj",
+      "type": "particle",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuj"
+    },
+    {
+      "name": "Computer",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "computer"
+    },
+    {
+      "name": "MinenetExplore",
+      "type": "gui",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "minenet_explore"
+    },
+    {
+      "name": "ShowNet",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_net",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pcos1",
+      "type": "gui",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pcos_1"
+    },
+    {
+      "name": "MinepediaNavigateExplore",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "minepedia_navigate_explore",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Minepediaexplore",
+      "type": "gui",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "minepediaexplore"
+    },
+    {
+      "name": "ModExplore",
+      "type": "gui",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mod_explore"
+    },
+    {
+      "name": "Metalblock",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metalblock"
+    },
+    {
+      "name": "Trashblock",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trashblock"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.agrons.trash": "Trash",
+      "block.agrons.tetstblockda": "Tetstblockda",
+      "block.agrons.trashblock": "Trashblock",
+      "block.agrons.metalblock": "Metal block",
+      "biome.agrons.trashworld": "Trashworld",
+      "block.agrons.computer": "Computer"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "agrons",
+    "modName": "Agrons",
+    "version": "1.0.0",
+    "author": "NVIAS nPC 01, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "modElementsPackage": "net.kapusta.agrons",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200233511
+}

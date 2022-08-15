@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "agrons:block/computer"
+    },
+    "facing=east": {
+      "model": "agrons:block/computer",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "agrons:block/computer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "agrons:block/computer",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "agrons:block/computer",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "agrons:block/computer",
+      "x": 90
+    }
+  }
+}
