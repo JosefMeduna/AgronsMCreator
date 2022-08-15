@@ -29,7 +29,7 @@ public class AgronsModTabs {
 		TAB_AGRONS_GUNS = new CreativeModeTab("tabagrons_guns") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(AgronsModItems.LASER_GUN.get());
+				return new ItemStack(AgronsModBlocks.TRASH.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)

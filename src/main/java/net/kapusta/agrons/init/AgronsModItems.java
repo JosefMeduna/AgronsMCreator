@@ -17,6 +17,7 @@ import net.minecraft.world.item.BlockItem;
 import net.kapusta.agrons.item.TrashitemItem;
 import net.kapusta.agrons.item.PifPufLaserItem;
 import net.kapusta.agrons.item.OzubeneKoloItem;
+import net.kapusta.agrons.item.MetalingotItem;
 import net.kapusta.agrons.item.LaserGunItem;
 import net.kapusta.agrons.AgronsMod;
 
@@ -25,7 +26,7 @@ public class AgronsModItems {
 	public static final RegistryObject<Item> TRASH = block(AgronsModBlocks.TRASH, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> TETSTBLOCKDA = block(AgronsModBlocks.TETSTBLOCKDA, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> COMPUTER = block(AgronsModBlocks.COMPUTER, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> METALBLOCK = block(AgronsModBlocks.METALBLOCK, AgronsModTabs.TAB_AGRONS);
+	public static final RegistryObject<Item> METALBLOCK = block(AgronsModBlocks.METALBLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> TRASHBLOCK = block(AgronsModBlocks.TRASHBLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> LASER_GUN = REGISTRY.register("laser_gun", () -> new LaserGunItem());
 	public static final RegistryObject<Item> TRASHITEM = REGISTRY.register("trashitem", () -> new TrashitemItem());
@@ -37,6 +38,7 @@ public class AgronsModItems {
 			() -> new ForgeSpawnEggItem(AgronsModEntities.ROBO_FARMAR, -12303292, -5287680, new Item.Properties().tab(AgronsModTabs.TAB_AGRONS)));
 	public static final RegistryObject<Item> ROBO_PRASE = REGISTRY.register("robo_prase_spawn_egg",
 			() -> new ForgeSpawnEggItem(AgronsModEntities.ROBO_PRASE, -12040120, -65310, new Item.Properties().tab(AgronsModTabs.TAB_AGRONS)));
+	public static final RegistryObject<Item> METALINGOT = REGISTRY.register("metalingot", () -> new MetalingotItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

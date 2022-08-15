@@ -1,7 +1,7 @@
 {
   "block.agrons.trash": "Trash",
-  "block.agrons.metalblock": "Metal block",
   "itemGroup.tabagrons": "Agrons",
+  "block.agrons.metalblock": "Metal block",
   "biome.agrons.trashworld": "Trashworld",
   "itemGroup.tabagrons_guns": "Agrons - Guns",
   "item.agrons.pif_puf_laser": "Title.projectile.laser",
@@ -16,5 +16,6 @@
   "item.agrons.robo_kohout_spawn_egg": "Robo Kohout Spawn Egg",
   "item.agrons.laser_gun": "Laser Gun",
   "item.agrons.trashitem": "Plast",
-  "entity.agrons.robo_kohout": "Robo Kohout"
+  "entity.agrons.robo_kohout": "Robo Kohout",
+  "item.agrons.metalingot": "Metalingot"
 }
