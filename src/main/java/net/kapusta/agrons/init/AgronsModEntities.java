@@ -16,6 +16,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.kapusta.agrons.entity.RoboSteveEntity;
 import net.kapusta.agrons.entity.RoboPraseEntity;
 import net.kapusta.agrons.entity.RoboKohoutEntity;
 import net.kapusta.agrons.entity.RoboFarmarEntity;
@@ -41,6 +42,11 @@ public class AgronsModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RoboPraseEntity::new)
 
 					.sized(0.9f, 0.9f));
+	public static final RegistryObject<EntityType<RoboSteveEntity>> ROBO_STEVE = register("robo_steve",
+			EntityType.Builder.<RoboSteveEntity>of(RoboSteveEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RoboSteveEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -52,6 +58,7 @@ public class AgronsModEntities {
 			RoboKohoutEntity.init();
 			RoboFarmarEntity.init();
 			RoboPraseEntity.init();
+			RoboSteveEntity.init();
 		});
 	}
 
@@ -60,5 +67,6 @@ public class AgronsModEntities {
 		event.put(ROBO_KOHOUT.get(), RoboKohoutEntity.createAttributes().build());
 		event.put(ROBO_FARMAR.get(), RoboFarmarEntity.createAttributes().build());
 		event.put(ROBO_PRASE.get(), RoboPraseEntity.createAttributes().build());
+		event.put(ROBO_STEVE.get(), RoboSteveEntity.createAttributes().build());
 	}
 }
