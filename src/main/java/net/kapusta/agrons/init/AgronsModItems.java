@@ -17,9 +17,11 @@ import net.minecraft.world.item.BlockItem;
 import net.kapusta.agrons.item.TrashitemItem;
 import net.kapusta.agrons.item.PifPufLaserItem;
 import net.kapusta.agrons.item.OzubeneKoloItem;
+import net.kapusta.agrons.item.OhryzekHruskaItem;
 import net.kapusta.agrons.item.MetalingotItem;
 import net.kapusta.agrons.item.LaserGunItem;
 import net.kapusta.agrons.item.JetPackItem;
+import net.kapusta.agrons.item.HruskaitemItem;
 import net.kapusta.agrons.AgronsMod;
 
 public class AgronsModItems {
@@ -41,6 +43,9 @@ public class AgronsModItems {
 			() -> new ForgeSpawnEggItem(AgronsModEntities.ROBO_PRASE, -12040120, -65310, new Item.Properties().tab(AgronsModTabs.TAB_AGRONS)));
 	public static final RegistryObject<Item> METALINGOT = REGISTRY.register("metalingot", () -> new MetalingotItem());
 	public static final RegistryObject<Item> JET_PACK_CHESTPLATE = REGISTRY.register("jet_pack_chestplate", () -> new JetPackItem.Chestplate());
+	public static final RegistryObject<Item> OHRYZEK_HRUSKA = REGISTRY.register("ohryzek_hruska", () -> new OhryzekHruskaItem());
+	public static final RegistryObject<Item> HRUSKAITEM = REGISTRY.register("hruskaitem", () -> new HruskaitemItem());
+	public static final RegistryObject<Item> METALORE = block(AgronsModBlocks.METALORE, AgronsModTabs.TAB_AGRONS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

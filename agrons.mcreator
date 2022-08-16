@@ -245,6 +245,30 @@
         "eb": false,
         "ec": true
       }
+    },
+    {
+      "name": "OhryzekHruska",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ohryzek_hruska"
+    },
+    {
+      "name": "Hruskaitem",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hruskaitem"
+    },
+    {
+      "name": "Metalore",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metalore"
     }
   ],
   "variable_elements": [],
@@ -252,28 +276,31 @@
   "language_map": {
     "en_us": {
       "item.agrons.jet_pack_leggings": "Jet Pack Leggings",
-      "block.agrons.trash": "Trash",
+      "item.agrons.ohryzek_hruska": "Ohryzek z hrusky",
       "block.agrons.metalblock": "Metal block",
-      "itemGroup.tabagrons": "Agrons",
       "biome.agrons.trashworld": "Trashworld",
       "itemGroup.tabagrons_guns": "Agrons - Guns",
-      "item.agrons.pif_puf_laser": "Title.projectile.laser",
       "item.agrons.jet_pack_boots": "Jet Pack Boots",
-      "block.agrons.computer": "Computer",
-      "entity.agrons.robo_prase": "Robo Prase",
       "block.agrons.tetstblockda": "Tetstblockda",
       "block.agrons.trashblock": "Trashblock",
       "item.agrons.robo_farmar_spawn_egg": "Robo Farmář Spawn Egg",
-      "item.agrons.ozubene_kolo": "Ozubene Kolo",
       "item.agrons.robo_prase_spawn_egg": "Robo Prase Spawn Egg",
-      "entity.agrons.robo_farmar": "Robo Farmář",
       "item.agrons.robo_kohout_spawn_egg": "Robo Kohout Spawn Egg",
+      "item.agrons.hruskaitem": "Hruska ",
+      "entity.agrons.robo_kohout": "Robo Kohout",
+      "item.agrons.jet_pack_helmet": "Jet Pack Helmet",
+      "block.agrons.trash": "Trash",
+      "itemGroup.tabagrons": "Agrons",
+      "item.agrons.pif_puf_laser": "Title.projectile.laser",
+      "block.agrons.computer": "Computer",
+      "entity.agrons.robo_prase": "Robo Prase",
+      "item.agrons.ozubene_kolo": "Ozubene Kolo",
+      "entity.agrons.robo_farmar": "Robo Farmář",
+      "block.agrons.metalore": "Metalová ruda",
       "item.agrons.laser_gun": "Laser Gun",
       "item.agrons.jet_pack_chestplate": "Jet Pack",
       "item.agrons.trashitem": "Plast",
-      "entity.agrons.robo_kohout": "Robo Kohout",
-      "item.agrons.metalingot": "Metal ingot",
-      "item.agrons.jet_pack_helmet": "Jet Pack Helmet"
+      "item.agrons.metalingot": "Metal ingot"
     }
   },
   "foldersRoot": {

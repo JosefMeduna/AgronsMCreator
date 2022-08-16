@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "agrons:blocks/metal_ore",
+    "up": "agrons:blocks/metal_ore",
+    "north": "agrons:blocks/metal_ore",
+    "east": "agrons:blocks/metal_ore",
+    "south": "agrons:blocks/metal_ore",
+    "west": "agrons:blocks/metal_ore",
+    "particle": "agrons:blocks/metal_ore"
+  }
+}

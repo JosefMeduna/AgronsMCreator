@@ -29,6 +29,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.kapusta.agrons.init.AgronsModTabs;
 import net.kapusta.agrons.init.AgronsModParticleTypes;
 import net.kapusta.agrons.init.AgronsModItems;
+import net.kapusta.agrons.init.AgronsModFeatures;
 import net.kapusta.agrons.init.AgronsModEntities;
 import net.kapusta.agrons.init.AgronsModBlocks;
 import net.kapusta.agrons.init.AgronsModBiomes;
@@ -52,6 +53,8 @@ public class AgronsMod {
 		AgronsModBlocks.REGISTRY.register(bus);
 		AgronsModItems.REGISTRY.register(bus);
 		AgronsModEntities.REGISTRY.register(bus);
+
+		AgronsModFeatures.REGISTRY.register(bus);
 
 		AgronsModBiomes.REGISTRY.register(bus);
 		AgronsModParticleTypes.REGISTRY.register(bus);
