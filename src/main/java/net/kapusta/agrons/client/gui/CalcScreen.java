@@ -11,8 +11,8 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
-import net.kapusta.agrons.world.inventory.Pcos1Menu;
-import net.kapusta.agrons.network.Pcos1ButtonMessage;
+import net.kapusta.agrons.world.inventory.CalcMenu;
+import net.kapusta.agrons.network.CalcButtonMessage;
 import net.kapusta.agrons.AgronsMod;
 
 import java.util.HashMap;
@@ -20,13 +20,13 @@ import java.util.HashMap;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class Pcos1Screen extends AbstractContainerScreen<Pcos1Menu> {
-	private final static HashMap<String, Object> guistate = Pcos1Menu.guistate;
+public class CalcScreen extends AbstractContainerScreen<CalcMenu> {
+	private final static HashMap<String, Object> guistate = CalcMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
 
-	public Pcos1Screen(Pcos1Menu container, Inventory inventory, Component text) {
+	public CalcScreen(CalcMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;
@@ -37,7 +37,7 @@ public class Pcos1Screen extends AbstractContainerScreen<Pcos1Menu> {
 		this.imageHeight = 202;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("agrons:textures/screens/pcos_1.png");
+	private static final ResourceLocation texture = new ResourceLocation("agrons:textures/screens/calc.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -87,8 +87,8 @@ public class Pcos1Screen extends AbstractContainerScreen<Pcos1Menu> {
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
 		this.addRenderableWidget(new Button(this.leftPos + 130, this.topPos + 9, 108, 20, new TextComponent("Minenet explorer"), e -> {
 			if (true) {
-				AgronsMod.PACKET_HANDLER.sendToServer(new Pcos1ButtonMessage(0, x, y, z));
-				Pcos1ButtonMessage.handleButtonAction(entity, 0, x, y, z);
+				AgronsMod.PACKET_HANDLER.sendToServer(new CalcButtonMessage(0, x, y, z));
+				CalcButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}));
 	}

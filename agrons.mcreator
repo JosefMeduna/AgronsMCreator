@@ -301,6 +301,57 @@
           }
         ]
       }
+    },
+    {
+      "name": "DebugRightclicked",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "debug_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Debug",
+      "type": "item",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "debug"
+    },
+    {
+      "name": "TechnoGuiExplore",
+      "type": "gui",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "techno_gui_explore"
+    },
+    {
+      "name": "SearchNet",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "search_net",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Calc",
+      "type": "gui",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calc"
     }
   ],
   "variable_elements": [],
@@ -325,6 +376,7 @@
       "itemGroup.tabagrons": "Agrons",
       "block.agrons.hruska_blok": "Hruska Blok",
       "item.agrons.pif_puf_laser": "Title.projectile.laser",
+      "item.agrons.debug": "Debug",
       "block.agrons.computer": "Computer",
       "entity.agrons.robo_prase": "Robo Prase",
       "item.agrons.ozubene_kolo": "Ozubene Kolo",
