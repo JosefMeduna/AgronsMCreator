@@ -12,10 +12,12 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 
+import net.kapusta.agrons.world.inventory.TechnoGuiExploreMenu;
 import net.kapusta.agrons.world.inventory.Pcos1Menu;
 import net.kapusta.agrons.world.inventory.ModExploreMenu;
 import net.kapusta.agrons.world.inventory.MinepediaexploreMenu;
 import net.kapusta.agrons.world.inventory.MinenetExploreMenu;
+import net.kapusta.agrons.world.inventory.CalcMenu;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -30,6 +32,9 @@ public class AgronsModMenus {
 			(id, inv, extraData) -> new MinepediaexploreMenu(id, inv, extraData));
 	public static final MenuType<ModExploreMenu> MOD_EXPLORE = register("mod_explore",
 			(id, inv, extraData) -> new ModExploreMenu(id, inv, extraData));
+	public static final MenuType<TechnoGuiExploreMenu> TECHNO_GUI_EXPLORE = register("techno_gui_explore",
+			(id, inv, extraData) -> new TechnoGuiExploreMenu(id, inv, extraData));
+	public static final MenuType<CalcMenu> CALC = register("calc", (id, inv, extraData) -> new CalcMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

@@ -1,32 +1,15 @@
 
 package net.kapusta.agrons.client.gui;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.Button;
-import net.minecraft.client.Minecraft;
+public class TechnoGuiExploreScreen extends AbstractContainerScreen<TechnoGuiExploreMenu> {
 
-import net.kapusta.agrons.world.inventory.Pcos1Menu;
-import net.kapusta.agrons.network.Pcos1ButtonMessage;
-import net.kapusta.agrons.AgronsMod;
+	private final static HashMap<String, Object> guistate = TechnoGuiExploreMenu.guistate;
 
-import java.util.HashMap;
-
-import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.blaze3d.systems.RenderSystem;
-
-public class Pcos1Screen extends AbstractContainerScreen<Pcos1Menu> {
-	private final static HashMap<String, Object> guistate = Pcos1Menu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
 
-	public Pcos1Screen(Pcos1Menu container, Inventory inventory, Component text) {
+	public TechnoGuiExploreScreen(TechnoGuiExploreMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;
@@ -37,13 +20,14 @@ public class Pcos1Screen extends AbstractContainerScreen<Pcos1Menu> {
 		this.imageHeight = 202;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("agrons:textures/screens/pcos_1.png");
+	private static final ResourceLocation texture = new ResourceLocation("agrons:textures/screens/techno_gui_explore.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(ms);
 		super.render(ms, mouseX, mouseY, partialTicks);
 		this.renderTooltip(ms, mouseX, mouseY);
+
 	}
 
 	@Override
@@ -51,8 +35,16 @@ public class Pcos1Screen extends AbstractContainerScreen<Pcos1Menu> {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
+
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("agrons:textures/screens/webbrowser.png"));
+		this.blit(ms, this.leftPos + 6, this.topPos + 5, 0, 0, 16, 16, 16, 16);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("agrons:textures/screens/techno.png"));
+		this.blit(ms, this.leftPos + 137, this.topPos + 58, 0, 0, 68, 127, 68, 127);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -62,6 +54,7 @@ public class Pcos1Screen extends AbstractContainerScreen<Pcos1Menu> {
 			this.minecraft.player.closeContainer();
 			return true;
 		}
+
 		return super.keyPressed(key, b, c);
 	}
 
@@ -72,7 +65,8 @@ public class Pcos1Screen extends AbstractContainerScreen<Pcos1Menu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "MineOs 1.0", 6, 184, -12829636);
+		this.font.draw(poseStack, "Technoblade never dies!!!", 22, 8, -12829636);
+		this.font.draw(poseStack, "Technoblade never dies!!!", 108, 39, -65536);
 	}
 
 	@Override
@@ -84,12 +78,15 @@ public class Pcos1Screen extends AbstractContainerScreen<Pcos1Menu> {
 	@Override
 	public void init() {
 		super.init();
+
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 130, this.topPos + 9, 108, 20, new TextComponent("Minenet explorer"), e -> {
+
+		this.addRenderableWidget(new Button(this.leftPos + 341, this.topPos + 4, 30, 20, new TextComponent("<-"), e -> {
 			if (true) {
-				AgronsMod.PACKET_HANDLER.sendToServer(new Pcos1ButtonMessage(0, x, y, z));
-				Pcos1ButtonMessage.handleButtonAction(entity, 0, x, y, z);
+				AgronsMod.PACKET_HANDLER.sendToServer(new TechnoGuiExploreButtonMessage(0, x, y, z));
+				TechnoGuiExploreButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}));
 	}
+
 }
