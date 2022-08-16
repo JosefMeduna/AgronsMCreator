@@ -10,11 +10,14 @@
     "textureLeggings": "",
     "enableBoots": false,
     "textureBoots": "",
+    "onBodyTick": {
+      "name": "JetPackBodyTickEvent"
+    },
     "creativeTab": {
       "value": "CUSTOM:Agrons"
     },
-    "armorTextureFile": "jatpacktest",
-    "helmetName": "Jet Pack Helmet",
+    "armorTextureFile": "diamond__jet_pack",
+    "helmetName": "Jet Pack Heldddmet",
     "bodyName": "Jet Pack",
     "leggingsName": "Jet Pack Leggings",
     "bootsName": "Jet Pack Boots",

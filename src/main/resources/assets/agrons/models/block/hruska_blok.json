@@ -1,0 +1,8 @@
+{
+  "parent": "agrons:custom/hruska",
+  "textures": {
+    "all": "agrons:blocks/hruska",
+    "particle": "agrons:blocks/hruska",
+    "0": "agrons:blocks/hruska"
+  }
+}

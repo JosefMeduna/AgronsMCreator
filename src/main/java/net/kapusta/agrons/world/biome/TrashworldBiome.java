@@ -35,10 +35,13 @@ import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import net.minecraft.core.particles.SimpleParticleType;
 
+import net.kapusta.agrons.world.features.treedecorators.TrashworldFruitDecorator;
 import net.kapusta.agrons.init.AgronsModParticleTypes;
 import net.kapusta.agrons.init.AgronsModBlocks;
 
 import java.util.List;
+
+import com.google.common.collect.ImmutableList;
 
 public class TrashworldBiome {
 	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(-0.142857142857f, 0.142857142857f),
@@ -59,7 +62,10 @@ public class TrashworldBiome {
 				FeatureUtils.register("agrons:tree_trashworld", Feature.TREE,
 						new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(AgronsModBlocks.TRASH.get().defaultBlockState()),
 								new StraightTrunkPlacer(1, 2, 0), BlockStateProvider.simple(AgronsModBlocks.TETSTBLOCKDA.get().defaultBlockState()),
-								new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3), new TwoLayersFeatureSize(1, 0, 1)).ignoreVines()
+								new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3), new TwoLayersFeatureSize(1, 0, 1))
+								.decorators(ImmutableList.of(
+
+										TrashworldFruitDecorator.INSTANCE))
 								.build()),
 				List.of(CountPlacement.of(1), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0),
 						PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, PlacementUtils.filteredByBlockSurvival(Blocks.OAK_SAPLING), BiomeFilter.biome())));

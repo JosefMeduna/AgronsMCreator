@@ -1,0 +1,33 @@
+{
+  "_fv": 33,
+  "_type": "villagertrade",
+  "definition": {
+    "tradeEntries": [
+      {
+        "villagerProfession": {
+          "value": "WEAPONSMITH"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "CUSTOM:Metalore"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": "Items.COAL#0"
+            },
+            "countPrice2": 3,
+            "offer": {
+              "value": "CUSTOM:Metalingot"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          }
+        ]
+      }
+    ]
+  }
+}

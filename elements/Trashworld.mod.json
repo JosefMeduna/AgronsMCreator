@@ -83,7 +83,7 @@
       "value": ""
     },
     "treeFruits": {
-      "value": ""
+      "value": "CUSTOM:HruskaBlok"
     },
     "spawnStronghold": true,
     "spawnMineshaft": true,

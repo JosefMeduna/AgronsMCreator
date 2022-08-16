@@ -269,6 +269,38 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "metalore"
+    },
+    {
+      "name": "HruskaBlok",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hruska_blok"
+    },
+    {
+      "name": "Metalpec",
+      "type": "villagertrade",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metalpec"
+    },
+    {
+      "name": "JetPackBodyTickEvent",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jet_pack_body_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -288,9 +320,10 @@
       "item.agrons.robo_kohout_spawn_egg": "Robo Kohout Spawn Egg",
       "item.agrons.hruskaitem": "Hruska ",
       "entity.agrons.robo_kohout": "Robo Kohout",
-      "item.agrons.jet_pack_helmet": "Jet Pack Helmet",
+      "item.agrons.jet_pack_helmet": "Jet Pack Heldddmet",
       "block.agrons.trash": "Trash",
       "itemGroup.tabagrons": "Agrons",
+      "block.agrons.hruska_blok": "Hruska Blok",
       "item.agrons.pif_puf_laser": "Title.projectile.laser",
       "block.agrons.computer": "Computer",
       "entity.agrons.robo_prase": "Robo Prase",

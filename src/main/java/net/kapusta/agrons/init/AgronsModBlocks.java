@@ -7,6 +7,10 @@ package net.kapusta.agrons.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
@@ -15,6 +19,7 @@ import net.kapusta.agrons.block.TrashBlock;
 import net.kapusta.agrons.block.TetstblockdaBlock;
 import net.kapusta.agrons.block.MetaloreBlock;
 import net.kapusta.agrons.block.MetalblockBlock;
+import net.kapusta.agrons.block.HruskaBlokBlock;
 import net.kapusta.agrons.block.ComputerBlock;
 import net.kapusta.agrons.AgronsMod;
 
@@ -26,4 +31,13 @@ public class AgronsModBlocks {
 	public static final RegistryObject<Block> METALBLOCK = REGISTRY.register("metalblock", () -> new MetalblockBlock());
 	public static final RegistryObject<Block> TRASHBLOCK = REGISTRY.register("trashblock", () -> new TrashblockBlock());
 	public static final RegistryObject<Block> METALORE = REGISTRY.register("metalore", () -> new MetaloreBlock());
+	public static final RegistryObject<Block> HRUSKA_BLOK = REGISTRY.register("hruska_blok", () -> new HruskaBlokBlock());
+
+	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+	public static class ClientSideHandler {
+		@SubscribeEvent
+		public static void clientSetup(FMLClientSetupEvent event) {
+			HruskaBlokBlock.registerRenderLayer();
+		}
+	}
 }

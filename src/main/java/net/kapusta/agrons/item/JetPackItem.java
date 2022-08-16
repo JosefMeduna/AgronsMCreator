@@ -3,16 +3,19 @@ package net.kapusta.agrons.item;
 
 import net.minecraftforge.registries.ForgeRegistries;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 
+import net.kapusta.agrons.procedures.JetPackBodyTickEventProcedure;
 import net.kapusta.agrons.init.AgronsModTabs;
 
 public abstract class JetPackItem extends ArmorItem {
@@ -67,7 +70,12 @@ public abstract class JetPackItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "agrons:textures/models/armor/jatpacktest_layer_1.png";
+			return "agrons:textures/models/armor/diamond__jet_pack_layer_1.png";
+		}
+
+		@Override
+		public void onArmorTick(ItemStack itemstack, Level world, Player entity) {
+			JetPackBodyTickEventProcedure.execute(entity);
 		}
 	}
 }
