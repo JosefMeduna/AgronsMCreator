@@ -238,8 +238,8 @@
   "language_map": {
     "en_us": {
       "block.agrons.trash": "Trash",
-      "itemGroup.tabagrons": "Agrons",
       "block.agrons.metalblock": "Metal block",
+      "itemGroup.tabagrons": "Agrons",
       "biome.agrons.trashworld": "Trashworld",
       "itemGroup.tabagrons_guns": "Agrons - Guns",
       "item.agrons.pif_puf_laser": "Title.projectile.laser",
