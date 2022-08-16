@@ -344,6 +344,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "calc"
+    },
+    {
+      "name": "Tovarna",
+      "type": "structure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tovarna"
     }
   ],
   "variable_elements": [],
@@ -353,7 +361,7 @@
       "item.agrons.jet_pack_leggings": "Jet Pack Leggings",
       "item.agrons.ohryzek_hruska": "Ohryzek z hrusky",
       "block.agrons.metalblock": "Metal block",
-      "biome.agrons.trashworld": "Trashworld",
+      "biome.agrons.trashworld": "Trash desert",
       "itemGroup.tabagrons_guns": "Agrons - Guns",
       "item.agrons.jet_pack_boots": "Jet Pack Boots",
       "block.agrons.tetstblockda": "Tetstblockda",

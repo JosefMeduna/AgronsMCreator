@@ -2,15 +2,15 @@
   "_fv": 33,
   "_type": "biome",
   "definition": {
-    "name": "Trashworld",
+    "name": "Trash desert",
     "groundBlock": {
-      "value": "CUSTOM:Trash"
+      "value": "CUSTOM:Trashblock"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:Tetstblockda"
+      "value": "Blocks.DIRT#1"
     },
     "underwaterBlock": {
-      "value": "Blocks.AMETHYST_BLOCK"
+      "value": ""
     },
     "airColor": {
       "value": -13421773,

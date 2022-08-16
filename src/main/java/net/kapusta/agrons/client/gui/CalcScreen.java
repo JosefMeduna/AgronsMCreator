@@ -84,7 +84,6 @@ public class CalcScreen extends AbstractContainerScreen<CalcMenu> {
 		this.font.draw(poseStack, "MineCalc 1.0", 6, 184, -12829636);
 		this.font.draw(poseStack, "Cislo 1", 109, 26, -12829636);
 		this.font.draw(poseStack, "Cislo 2", 109, 53, -12829636);
-		this.font.draw(poseStack, "Vysledek", 189, 132, -12829636);
 	}
 
 	@Override
@@ -101,7 +100,7 @@ public class CalcScreen extends AbstractContainerScreen<CalcMenu> {
 		guistate.put("text:Csl1", Csl1);
 		Csl1.setMaxLength(32767);
 		this.addWidget(this.Csl1);
-		Csl2 = new EditBox(this.font, this.leftPos + 152, this.topPos + 50, 120, 20, new TextComponent(""));
+		Csl2 = new EditBox(this.font, this.leftPos + 152, this.topPos + 48, 120, 20, new TextComponent(""));
 		guistate.put("text:Csl2", Csl2);
 		Csl2.setMaxLength(32767);
 		this.addWidget(this.Csl2);
@@ -112,6 +111,8 @@ public class CalcScreen extends AbstractContainerScreen<CalcMenu> {
 		this.addRenderableWidget(new Button(this.leftPos + 212, this.topPos + 100, 30, 20, new TextComponent("x"), e -> {
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 245, this.topPos + 100, 30, 20, new TextComponent("/"), e -> {
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 7, this.topPos + 6, 30, 20, new TextComponent("X"), e -> {
 		}));
 	}
 }

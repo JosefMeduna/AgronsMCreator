@@ -82,8 +82,8 @@ public class AgronsModBiomes {
 							List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
 							surfaceRules.add(1,
 									preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, TRASHWORLD.getId()),
-											AgronsModBlocks.TRASH.get().defaultBlockState(), AgronsModBlocks.TETSTBLOCKDA.get().defaultBlockState(),
-											Blocks.AMETHYST_BLOCK.defaultBlockState()));
+											AgronsModBlocks.TRASHBLOCK.get().defaultBlockState(), Blocks.COARSE_DIRT.defaultBlockState(),
+											Blocks.COARSE_DIRT.defaultBlockState()));
 							NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
 									noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
 									noiseGeneratorSettings.noiseRouter(),

@@ -55,7 +55,7 @@
           "height": 20,
           "name": "Csl2",
           "x": 177,
-          "y": 69
+          "y": 67
         }
       },
       {
@@ -116,16 +116,14 @@
         }
       },
       {
-        "type": "label",
+        "type": "button",
         "data": {
-          "text": "Vysledek",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "Vysledek",
-          "x": 214,
-          "y": 151
+          "text": "X",
+          "width": 30,
+          "height": 20,
+          "name": "X",
+          "x": 32,
+          "y": 25
         }
       }
     ],

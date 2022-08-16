@@ -18,6 +18,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Holder;
 
 import net.kapusta.agrons.world.features.ores.MetaloreFeature;
+import net.kapusta.agrons.world.features.TovarnaFeature;
 import net.kapusta.agrons.AgronsMod;
 
 import java.util.function.Supplier;
@@ -31,6 +32,8 @@ public class AgronsModFeatures {
 	private static final List<FeatureRegistration> FEATURE_REGISTRATIONS = new ArrayList<>();
 	public static final RegistryObject<Feature<?>> METALORE = register("metalore", MetaloreFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, MetaloreFeature.GENERATE_BIOMES, MetaloreFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> TOVARNA = register("tovarna", TovarnaFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, TovarnaFeature.GENERATE_BIOMES, TovarnaFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);
