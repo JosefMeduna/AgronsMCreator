@@ -19,6 +19,7 @@ import net.kapusta.agrons.item.PifPufLaserItem;
 import net.kapusta.agrons.item.OzubeneKoloItem;
 import net.kapusta.agrons.item.MetalingotItem;
 import net.kapusta.agrons.item.LaserGunItem;
+import net.kapusta.agrons.item.JetPackItem;
 import net.kapusta.agrons.AgronsMod;
 
 public class AgronsModItems {
@@ -39,6 +40,7 @@ public class AgronsModItems {
 	public static final RegistryObject<Item> ROBO_PRASE = REGISTRY.register("robo_prase_spawn_egg",
 			() -> new ForgeSpawnEggItem(AgronsModEntities.ROBO_PRASE, -12040120, -65310, new Item.Properties().tab(AgronsModTabs.TAB_AGRONS)));
 	public static final RegistryObject<Item> METALINGOT = REGISTRY.register("metalingot", () -> new MetalingotItem());
+	public static final RegistryObject<Item> JET_PACK_CHESTPLATE = REGISTRY.register("jet_pack_chestplate", () -> new JetPackItem.Chestplate());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -1,10 +1,12 @@
 {
+  "item.agrons.jet_pack_leggings": "Jet Pack Leggings",
   "block.agrons.trash": "Trash",
-  "itemGroup.tabagrons": "Agrons",
   "block.agrons.metalblock": "Metal block",
+  "itemGroup.tabagrons": "Agrons",
   "biome.agrons.trashworld": "Trashworld",
   "itemGroup.tabagrons_guns": "Agrons - Guns",
   "item.agrons.pif_puf_laser": "Title.projectile.laser",
+  "item.agrons.jet_pack_boots": "Jet Pack Boots",
   "block.agrons.computer": "Computer",
   "entity.agrons.robo_prase": "Robo Prase",
   "block.agrons.tetstblockda": "Tetstblockda",
@@ -15,7 +17,9 @@
   "entity.agrons.robo_farmar": "Robo Farmář",
   "item.agrons.robo_kohout_spawn_egg": "Robo Kohout Spawn Egg",
   "item.agrons.laser_gun": "Laser Gun",
+  "item.agrons.jet_pack_chestplate": "Jet Pack",
   "item.agrons.trashitem": "Plast",
   "entity.agrons.robo_kohout": "Robo Kohout",
-  "item.agrons.metalingot": "Metal ingot"
+  "item.agrons.metalingot": "Metal ingot",
+  "item.agrons.jet_pack_helmet": "Jet Pack Helmet"
 }
