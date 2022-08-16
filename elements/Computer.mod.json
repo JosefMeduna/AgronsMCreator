@@ -108,7 +108,7 @@
     "particleAmount": 4,
     "hasInventory": false,
     "guiBoundTo": "Pcos1",
-    "openGUIOnRightClick": false,
+    "openGUIOnRightClick": true,
     "inventorySize": 0,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,

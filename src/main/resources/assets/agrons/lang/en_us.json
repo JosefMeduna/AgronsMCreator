@@ -1,7 +1,7 @@
 {
   "block.agrons.trash": "Trash",
-  "block.agrons.metalblock": "Metal block",
   "itemGroup.tabagrons": "Agrons",
+  "block.agrons.metalblock": "Metal block",
   "biome.agrons.trashworld": "Trashworld",
   "itemGroup.tabagrons_guns": "Agrons - Guns",
   "item.agrons.pif_puf_laser": "Title.projectile.laser",
