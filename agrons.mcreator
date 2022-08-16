@@ -327,14 +327,6 @@
       }
     },
     {
-      "name": "TechnoGuiExplore",
-      "type": "gui",
-      "sortid": 28,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "techno_gui_explore"
-    },
-    {
       "name": "SearchNet",
       "type": "procedure",
       "sortid": 28,
@@ -352,14 +344,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "calc"
-    },
-    {
-      "name": "Debug",
-      "type": "item",
-      "sortid": 27,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "debug"
     }
   ],
   "variable_elements": [],
@@ -378,10 +362,12 @@
       "item.agrons.robo_prase_spawn_egg": "Robo Prase Spawn Egg",
       "item.agrons.robo_kohout_spawn_egg": "Robo Kohout Spawn Egg",
       "item.agrons.hruskaitem": "Hruska ",
+      "entity.agrons.robo_steve": "Robo Steve",
       "entity.agrons.robo_kohout": "Robo Kohout",
       "item.agrons.jet_pack_helmet": "Jet Pack Heldddmet",
       "block.agrons.trash": "Trash",
       "itemGroup.tabagrons": "Agrons",
+      "item.agrons.robo_steve_spawn_egg": "Robo Steve Spawn Egg",
       "block.agrons.hruska_blok": "Hruska Blok",
       "item.agrons.pif_puf_laser": "Title.projectile.laser",
       "block.agrons.computer": "Computer",

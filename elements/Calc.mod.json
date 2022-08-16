@@ -11,30 +11,121 @@
     "doesPauseGame": false,
     "components": [
       {
-        "type": "button",
+        "type": "label",
         "data": {
-          "text": "Minenet explorer",
-          "onClick": {
-            "name": "ShowNet"
+          "text": "MineCalc 1.0",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
           },
-          "width": 108,
+          "name": "MineCalc 1.0",
+          "x": 31,
+          "y": 203
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "width": 120,
           "height": 20,
-          "name": "Minenet explorer",
-          "x": 155,
-          "y": 28
+          "name": "Csl1",
+          "x": 177,
+          "y": 40
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "MineOs 1.0",
+          "text": "Cislo 1",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "MineOs 1.0",
-          "x": 31,
-          "y": 203
+          "name": "Cislo 1",
+          "x": 134,
+          "y": 45
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "width": 120,
+          "height": 20,
+          "name": "Csl2",
+          "x": 177,
+          "y": 69
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Cislo 2",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Cislo 2",
+          "x": 134,
+          "y": 72
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 171,
+          "y": 119
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 204,
+          "y": 119
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "x",
+          "width": 30,
+          "height": 20,
+          "name": "x",
+          "x": 237,
+          "y": 119
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "/",
+          "width": 30,
+          "height": 20,
+          "name": "/",
+          "x": 270,
+          "y": 119
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Vysledek",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Vysledek",
+          "x": 214,
+          "y": 151
         }
       }
     ],

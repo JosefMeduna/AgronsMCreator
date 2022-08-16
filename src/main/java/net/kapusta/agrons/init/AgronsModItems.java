@@ -22,7 +22,6 @@ import net.kapusta.agrons.item.MetalingotItem;
 import net.kapusta.agrons.item.LaserGunItem;
 import net.kapusta.agrons.item.JetPackItem;
 import net.kapusta.agrons.item.HruskaitemItem;
-import net.kapusta.agrons.item.DebugItem;
 import net.kapusta.agrons.AgronsMod;
 
 public class AgronsModItems {
@@ -50,7 +49,6 @@ public class AgronsModItems {
 	public static final RegistryObject<Item> HRUSKA_BLOK = block(AgronsModBlocks.HRUSKA_BLOK, AgronsModTabs.TAB_AGRONS);
 	public static final RegistryObject<Item> ROBO_STEVE = REGISTRY.register("robo_steve_spawn_egg",
 			() -> new ForgeSpawnEggItem(AgronsModEntities.ROBO_STEVE, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> DEBUG = REGISTRY.register("debug", () -> new DebugItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

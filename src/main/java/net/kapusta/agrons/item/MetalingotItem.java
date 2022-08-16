@@ -10,7 +10,7 @@ import net.kapusta.agrons.init.AgronsModTabs;
 
 public class MetalingotItem extends Item {
 	public MetalingotItem() {
-		super(new Item.Properties().tab(AgronsModTabs.TAB_AGRONS).stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(AgronsModTabs.TAB_AGRONS).stacksTo(64).fireResistant().rarity(Rarity.COMMON));
 	}
 
 	@Override
