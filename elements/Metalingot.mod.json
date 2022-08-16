@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "agrons-_metal_ingot_textura",
     "customModelName": "Normal",
-    "name": "Metalingot",
+    "name": "Metal ingot",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Agrons"
