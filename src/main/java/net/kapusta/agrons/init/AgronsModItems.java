@@ -30,7 +30,7 @@ public class AgronsModItems {
 	public static final RegistryObject<Item> TETSTBLOCKDA = block(AgronsModBlocks.TETSTBLOCKDA, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> COMPUTER = block(AgronsModBlocks.COMPUTER, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> METALBLOCK = block(AgronsModBlocks.METALBLOCK, AgronsModTabs.TAB_AGRONS);
-	public static final RegistryObject<Item> TRASHBLOCK = block(AgronsModBlocks.TRASHBLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> TRASHBLOCK = block(AgronsModBlocks.TRASHBLOCK, AgronsModTabs.TAB_AGRONS);
 	public static final RegistryObject<Item> LASER_GUN = REGISTRY.register("laser_gun", () -> new LaserGunItem());
 	public static final RegistryObject<Item> TRASHITEM = REGISTRY.register("trashitem", () -> new TrashitemItem());
 	public static final RegistryObject<Item> PIF_PUF_LASER = REGISTRY.register("pif_puf_laser", () -> new PifPufLaserItem());
@@ -52,7 +52,7 @@ public class AgronsModItems {
 	public static final RegistryObject<Item> KRABIC = block(AgronsModBlocks.KRABIC, AgronsModTabs.TAB_AGRONS);
 	public static final RegistryObject<Item> PAS = block(AgronsModBlocks.PAS, AgronsModTabs.TAB_AGRONS);
 	public static final RegistryObject<Item> TRAKTOR = REGISTRY.register("traktor_spawn_egg",
-			() -> new ForgeSpawnEggItem(AgronsModEntities.TRAKTOR, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+			() -> new ForgeSpawnEggItem(AgronsModEntities.TRAKTOR, -1, -1, new Item.Properties().tab(null)));
 	public static final RegistryObject<Item> ZATOCPAS = block(AgronsModBlocks.ZATOCPAS, AgronsModTabs.TAB_AGRONS);
 	public static final RegistryObject<Item> TRAKTOR_SPAWN_CRATE = block(AgronsModBlocks.TRAKTOR_SPAWN_CRATE, AgronsModTabs.TAB_AGRONS);
 	public static final RegistryObject<Item> EMAN = block(AgronsModBlocks.EMAN, AgronsModTabs.TAB_AGRONS);

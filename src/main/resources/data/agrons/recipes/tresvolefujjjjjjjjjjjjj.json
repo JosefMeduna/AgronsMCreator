@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "agrons:trashitem"
+    },
+    "1": {
+      "item": "agrons:trashitem"
+    },
+    "2": {
+      "item": "agrons:trashitem"
+    },
+    "3": {
+      "item": "agrons:trashitem"
+    }
+  },
+  "result": {
+    "item": "agrons:trashblock",
+    "count": 1
+  }
+}

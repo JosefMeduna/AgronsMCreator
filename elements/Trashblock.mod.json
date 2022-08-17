@@ -33,14 +33,14 @@
         "subtract": false
       }
     ],
-    "name": "Trashblock",
+    "name": "Odpad",
     "specialInfo": [],
     "hardness": 0.95,
     "resistance": 6.5,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "CUSTOM:Agrons"
     },
     "destroyTool": "Not specified",
     "customDrop": {
