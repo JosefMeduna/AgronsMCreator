@@ -1,0 +1,82 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 377,
+    "height": 202,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Technoblade never dies!!! - Minenet explorer",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Technoblade never dies!!! - Minenet explorer",
+          "x": 47,
+          "y": 27
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "<-",
+          "onClick": {
+            "name": "ShowNet"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "<-",
+          "x": 366,
+          "y": 23
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "webbrowser.png",
+          "use1Xscale": false,
+          "name": "webbrowser.png",
+          "x": 31,
+          "y": 24
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "techno.png",
+          "use1Xscale": false,
+          "name": "techno.png",
+          "x": 42,
+          "y": 65
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Never dies",
+          "color": {
+            "value": -3407872,
+            "falpha": 0.0
+          },
+          "name": "Never dies",
+          "x": 120,
+          "y": 65
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

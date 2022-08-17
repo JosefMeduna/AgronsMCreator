@@ -2,12 +2,12 @@
   "_fv": 33,
   "_type": "block",
   "definition": {
-    "texture": "jump_pad_spodek",
-    "textureTop": "jump_pad_vrsek",
-    "textureLeft": "jump_pad",
-    "textureFront": "jump_pad",
-    "textureRight": "jump_pad",
-    "textureBack": "jump_pad",
+    "texture": "traktor_spawn_block_3",
+    "textureTop": "block_spawn_bloc_vrsek2",
+    "textureLeft": "traktor_spawn_block_3",
+    "textureFront": "trakros_spawn_block",
+    "textureRight": "traktor_spawn_block_3",
+    "textureBack": "trakros_spawn_block",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -33,10 +33,8 @@
         "subtract": false
       }
     ],
-    "name": "Jump pad",
-    "specialInfo": [
-      "hoplá"
-    ],
+    "name": "Traktor Spawn Crate",
+    "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
@@ -56,7 +54,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "IRON"
+      "value": "ROCK"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -75,13 +73,13 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
-    "speedFactor": 0.9,
-    "jumpFactor": 3.0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "GROUND"
     },
     "breakSound": {
       "value": ""
@@ -103,7 +101,7 @@
     "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "CUSTOM:Fuj"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
@@ -125,9 +123,16 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "TraktorSpawnCrateOnBlockRightClicked"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.STONE"
+      }
+    ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,

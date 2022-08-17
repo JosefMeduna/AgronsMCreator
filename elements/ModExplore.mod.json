@@ -27,10 +27,13 @@
         "type": "button",
         "data": {
           "text": "X",
+          "onClick": {
+            "name": "ShowNet"
+          },
           "width": 30,
           "height": 20,
           "name": "X",
-          "x": 366,
+          "x": 371,
           "y": 24
         }
       },

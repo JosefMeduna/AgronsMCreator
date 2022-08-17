@@ -2,26 +2,26 @@
   "_fv": 33,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Robo Farmář",
+    "mobName": "Traktor",
     "mobLabel": "",
-    "mobModelName": "Villager",
-    "mobModelTexture": "agrons-_roboticky_farmar_textura.png",
+    "mobModelName": "Modelcustom_model",
+    "mobModelTexture": "traktor.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
-    "modelHeight": 1.95,
+    "modelHeight": 1.8,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -12303292,
+      "value": -1,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -5287680,
+      "value": -1,
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "CUSTOM:Agrons"
+      "value": "MISC"
     },
     "isBoss": false,
     "bossBarColor": "PINK",
@@ -49,11 +49,11 @@
     "attackStrength": 3,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
-    "movementSpeed": 0.3,
+    "movementSpeed": 0.5,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
     "followRange": 16,
-    "health": 10,
+    "health": 2,
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,
@@ -61,36 +61,36 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": false,
-    "ridable": false,
-    "canControlForward": false,
-    "canControlStrafe": false,
+    "ridable": true,
+    "canControlForward": true,
+    "canControlStrafe": true,
     "immuneToFire": false,
-    "immuneToArrows": false,
-    "immuneToFallDamage": false,
-    "immuneToCactus": false,
+    "immuneToArrows": true,
+    "immuneToFallDamage": true,
+    "immuneToCactus": true,
     "immuneToDrowning": false,
     "immuneToLightning": false,
-    "immuneToPotions": false,
+    "immuneToPotions": true,
     "immuneToPlayer": false,
     "immuneToExplosion": false,
     "immuneToTrident": false,
     "immuneToAnvil": false,
-    "immuneToWither": false,
-    "immuneToDragonBreath": false,
+    "immuneToWither": true,
+    "immuneToDragonBreath": true,
     "mobDrop": {
       "value": ""
     },
     "livingSound": {
-      "value": "entity.iron_golem.repair"
+      "value": ""
     },
     "hurtSound": {
-      "value": "entity.irongolem.hurt"
+      "value": "entity.iron_golem.repair"
     },
     "deathSound": {
-      "value": "entity.irongolem.death"
+      "value": ""
     },
     "stepSound": {
-      "value": ""
+      "value": "entity.irongolem.step"
     },
     "spawnParticles": false,
     "particleToSpawn": {
@@ -101,7 +101,7 @@
     "particleAmount": 4,
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"eat_grass\"><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],

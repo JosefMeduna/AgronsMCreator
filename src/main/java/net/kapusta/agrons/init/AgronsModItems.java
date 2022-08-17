@@ -26,7 +26,7 @@ import net.kapusta.agrons.AgronsMod;
 
 public class AgronsModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, AgronsMod.MODID);
-	public static final RegistryObject<Item> TRASH = block(AgronsModBlocks.TRASH, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> TRASH = block(AgronsModBlocks.TRASH, AgronsModTabs.TAB_AGRONS);
 	public static final RegistryObject<Item> TETSTBLOCKDA = block(AgronsModBlocks.TETSTBLOCKDA, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> COMPUTER = block(AgronsModBlocks.COMPUTER, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> METALBLOCK = block(AgronsModBlocks.METALBLOCK, AgronsModTabs.TAB_AGRONS);
@@ -51,6 +51,11 @@ public class AgronsModItems {
 			() -> new ForgeSpawnEggItem(AgronsModEntities.ROBO_STEVE, -1, -1, new Item.Properties().tab(AgronsModTabs.TAB_AGRONS)));
 	public static final RegistryObject<Item> KRABIC = block(AgronsModBlocks.KRABIC, AgronsModTabs.TAB_AGRONS);
 	public static final RegistryObject<Item> PAS = block(AgronsModBlocks.PAS, AgronsModTabs.TAB_AGRONS);
+	public static final RegistryObject<Item> TRAKTOR = REGISTRY.register("traktor_spawn_egg",
+			() -> new ForgeSpawnEggItem(AgronsModEntities.TRAKTOR, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> ZATOCPAS = block(AgronsModBlocks.ZATOCPAS, AgronsModTabs.TAB_AGRONS);
+	public static final RegistryObject<Item> TRAKTOR_SPAWN_CRATE = block(AgronsModBlocks.TRAKTOR_SPAWN_CRATE, AgronsModTabs.TAB_AGRONS);
+	public static final RegistryObject<Item> EMAN = block(AgronsModBlocks.EMAN, AgronsModTabs.TAB_AGRONS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

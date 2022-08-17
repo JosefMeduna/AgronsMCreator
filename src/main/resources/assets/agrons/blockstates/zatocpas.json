@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "agrons:block/zatocpas"
+    },
+    "facing=east": {
+      "model": "agrons:block/zatocpas",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "agrons:block/zatocpas",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "agrons:block/zatocpas",
+      "y": 270
+    }
+  }
+}

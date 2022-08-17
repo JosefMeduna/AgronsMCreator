@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "agrons:blocks/traktor_spawn_block_3",
+    "up": "agrons:blocks/block_spawn_bloc_vrsek2",
+    "north": "agrons:blocks/trakros_spawn_block",
+    "east": "agrons:blocks/traktor_spawn_block_3",
+    "south": "agrons:blocks/trakros_spawn_block",
+    "west": "agrons:blocks/traktor_spawn_block_3",
+    "particle": "agrons:blocks/traktor_spawn_block_3"
+  }
+}

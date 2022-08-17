@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "agrons:blocks/pas_spodek",
+    "up": "agrons:blocks/pas_5",
+    "north": "agrons:blocks/pas_spodek",
+    "east": "agrons:blocks/pas_spodek",
+    "south": "agrons:blocks/pas_spodek",
+    "west": "agrons:blocks/pas_spodek",
+    "particle": "agrons:blocks/pas_spodek"
+  }
+}

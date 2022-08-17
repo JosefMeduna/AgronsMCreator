@@ -53,7 +53,7 @@ public class TovarnaFeature extends Feature<NoneFeatureConfiguration> {
 		if (!generate_dimensions.contains(context.level().getLevel().dimension()))
 			return false;
 		if (template == null)
-			template = context.level().getLevel().getStructureManager().getOrCreate(new ResourceLocation("agrons", "agrons-nadzemni_tovarna"));
+			template = context.level().getLevel().getStructureManager().getOrCreate(new ResourceLocation("agrons", "agrons-nadzemni_tovarna_verze3"));
 		if (template == null)
 			return false;
 		boolean anyPlaced = false;

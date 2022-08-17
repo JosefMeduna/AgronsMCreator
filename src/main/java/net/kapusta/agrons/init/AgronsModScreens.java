@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import net.kapusta.agrons.client.gui.TecnoeeggexploreScreen;
 import net.kapusta.agrons.client.gui.Pcos1Screen;
 import net.kapusta.agrons.client.gui.ModExploreScreen;
 import net.kapusta.agrons.client.gui.MinepediaexploreScreen;
@@ -27,6 +28,7 @@ public class AgronsModScreens {
 			MenuScreens.register(AgronsModMenus.MINEPEDIAEXPLORE, MinepediaexploreScreen::new);
 			MenuScreens.register(AgronsModMenus.MOD_EXPLORE, ModExploreScreen::new);
 			MenuScreens.register(AgronsModMenus.CALC, CalcScreen::new);
+			MenuScreens.register(AgronsModMenus.TECNOEEGGEXPLORE, TecnoeeggexploreScreen::new);
 		});
 	}
 }
