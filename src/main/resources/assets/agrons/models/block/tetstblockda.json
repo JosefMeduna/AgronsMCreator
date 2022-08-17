@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "agrons:blocks/tst2",
-    "up": "agrons:blocks/tst2",
-    "north": "agrons:blocks/tst2",
-    "east": "agrons:blocks/tst2",
-    "south": "agrons:blocks/tst2",
-    "west": "agrons:blocks/tst2",
-    "particle": "agrons:blocks/tst2"
+    "down": "agrons:blocks/pas_spodek",
+    "up": "agrons:blocks/pas_spodek",
+    "north": "agrons:blocks/pas_spodek",
+    "east": "agrons:blocks/agrons-_nabijecka_na_baterky_textura_bocnic",
+    "south": "agrons:blocks/pas_spodek",
+    "west": "agrons:blocks/pas_spodek",
+    "particle": "agrons:blocks/pas_spodek"
   }
 }

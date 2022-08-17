@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "agrons:blocks/krabice_spodek",
+    "up": "agrons:blocks/krabyce_up",
+    "north": "agrons:blocks/krabyce_bok_1",
+    "east": "agrons:blocks/krabice_spodek",
+    "south": "agrons:blocks/krabice_bok_2",
+    "west": "agrons:blocks/krabice_bok_3",
+    "particle": "agrons:blocks/krabice_spodek"
+  }
+}

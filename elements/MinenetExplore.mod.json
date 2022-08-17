@@ -27,6 +27,9 @@
         "type": "button",
         "data": {
           "text": "X",
+          "onClick": {
+            "name": "Showmain"
+          },
           "width": 30,
           "height": 20,
           "name": "X",
@@ -84,6 +87,9 @@
         "type": "button",
         "data": {
           "text": "About mod",
+          "onClick": {
+            "name": "AboutModshow"
+          },
           "width": 72,
           "height": 20,
           "name": "About mod",

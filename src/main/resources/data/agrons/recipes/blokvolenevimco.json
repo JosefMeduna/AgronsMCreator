@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "agrons:metalingot"
+    },
+    "1": {
+      "item": "agrons:metalingot"
+    },
+    "2": {
+      "item": "agrons:metalingot"
+    },
+    "3": {
+      "item": "agrons:metalingot"
+    },
+    "4": {
+      "item": "agrons:metalingot"
+    },
+    "5": {
+      "item": "agrons:metalingot"
+    },
+    "6": {
+      "item": "agrons:metalingot"
+    },
+    "7": {
+      "item": "agrons:metalingot"
+    },
+    "8": {
+      "item": "agrons:metalingot"
+    }
+  },
+  "result": {
+    "item": "agrons:metalblock",
+    "count": 1
+  }
+}

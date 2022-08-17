@@ -11,9 +11,5 @@ public class JetPackBodyTickEventProcedure {
 			_player.getAbilities().flying = (true);
 			_player.onUpdateAbilities();
 		}
-		if (entity instanceof Player _player) {
-			_player.getAbilities().flying = (false);
-			_player.onUpdateAbilities();
-		}
 	}
 }

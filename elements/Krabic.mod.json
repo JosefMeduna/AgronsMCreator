@@ -2,15 +2,15 @@
   "_fv": 33,
   "_type": "block",
   "definition": {
-    "texture": "pas_spodek",
-    "textureTop": "pas_spodek",
-    "textureLeft": "pas_spodek",
-    "textureFront": "agrons-_nabijecka_na_baterky_textura_bocnic",
-    "textureRight": "pas_spodek",
-    "textureBack": "pas_bok_1",
+    "texture": "krabice_spodek",
+    "textureTop": "krabyce_up",
+    "textureLeft": "krabice_spodek",
+    "textureFront": "krabyce_bok_1",
+    "textureRight": "krabice_bok_3",
+    "textureBack": "krabice_bok_2",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 2,
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -33,14 +33,14 @@
         "subtract": false
       }
     ],
-    "name": "Computer",
+    "name": "Krabica",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "CUSTOM:Agrons"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -79,7 +79,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "WOOD"
     },
     "breakSound": {
       "value": ""
@@ -107,9 +107,9 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasInventory": false,
-    "guiBoundTo": "Pcos1",
-    "openGUIOnRightClick": true,
-    "inventorySize": 0,
+    "guiBoundTo": "<NONE>",
+    "openGUIOnRightClick": false,
+    "inventorySize": 9,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,

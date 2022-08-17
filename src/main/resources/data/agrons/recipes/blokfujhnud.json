@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "agrons:trashitem"
+    },
+    "1": {
+      "item": "agrons:trashitem"
+    },
+    "2": {
+      "item": "agrons:trashitem"
+    },
+    "3": {
+      "item": "agrons:trashitem"
+    },
+    "4": {
+      "item": "agrons:trashitem"
+    },
+    "5": {
+      "item": "agrons:trashitem"
+    },
+    "6": {
+      "item": "agrons:trashitem"
+    },
+    "7": {
+      "item": "agrons:trashitem"
+    },
+    "8": {
+      "item": "agrons:trashitem"
+    }
+  },
+  "result": {
+    "item": "agrons:trashblock",
+    "count": 1
+  }
+}

@@ -9,7 +9,6 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 
 import net.minecraft.world.level.levelgen.Heightmap;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.monster.Monster;
@@ -32,7 +31,7 @@ import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
-import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.TextComponent;
 
 import net.kapusta.agrons.init.AgronsModEntities;
 
@@ -51,6 +50,8 @@ public class RoboSteveEntity extends Monster {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
+		setCustomName(new TextComponent("Tonda69"));
+		setCustomNameVisible(true);
 	}
 
 	@Override
@@ -81,12 +82,7 @@ public class RoboSteveEntity extends Monster {
 
 	@Override
 	public SoundEvent getAmbientSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.cave"));
-	}
-
-	@Override
-	public void playStepSound(BlockPos pos, BlockState blockIn) {
-		this.playSound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.iron_golem.step")), 0.15f, 1);
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.iron_golem.step"));
 	}
 
 	@Override

@@ -3,7 +3,7 @@
   "_type": "livingentity",
   "definition": {
     "mobName": "Robo Steve",
-    "mobLabel": "",
+    "mobLabel": "Tonda69",
     "mobModelName": "Biped",
     "mobModelTexture": "steve.png",
     "mobModelGlowTexture": "",
@@ -21,7 +21,7 @@
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Agrons"
     },
     "isBoss": false,
     "bossBarColor": "PINK",
@@ -81,7 +81,7 @@
       "value": ""
     },
     "livingSound": {
-      "value": "ambient.cave"
+      "value": "entity.irongolem.step"
     },
     "hurtSound": {
       "value": "entity.generic.hurt"
@@ -90,7 +90,7 @@
       "value": "entity.generic.death"
     },
     "stepSound": {
-      "value": "entity.irongolem.step"
+      "value": ""
     },
     "spawnParticles": false,
     "particleToSpawn": {

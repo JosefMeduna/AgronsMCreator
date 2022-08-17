@@ -96,6 +96,10 @@ public class MinenetExploreScreen extends AbstractContainerScreen<MinenetExplore
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
 		this.addRenderableWidget(new Button(this.leftPos + 341, this.topPos + 5, 30, 20, new TextComponent("X"), e -> {
+			if (true) {
+				AgronsMod.PACKET_HANDLER.sendToServer(new MinenetExploreButtonMessage(0, x, y, z));
+				MinenetExploreButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}));
 		SearchBox = new EditBox(this.font, this.leftPos + 101, this.topPos + 67, 120, 20, new TextComponent(""));
 		guistate.put("text:SearchBox", SearchBox);
@@ -110,6 +114,10 @@ public class MinenetExploreScreen extends AbstractContainerScreen<MinenetExplore
 			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 177, this.topPos + 90, 72, 20, new TextComponent("About mod"), e -> {
+			if (true) {
+				AgronsMod.PACKET_HANDLER.sendToServer(new MinenetExploreButtonMessage(3, x, y, z));
+				MinenetExploreButtonMessage.handleButtonAction(entity, 3, x, y, z);
+			}
 		}));
 	}
 }

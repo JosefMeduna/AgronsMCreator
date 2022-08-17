@@ -12,7 +12,9 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.kapusta.agrons.world.inventory.MinenetExploreMenu;
+import net.kapusta.agrons.procedures.ShowmainProcedure;
 import net.kapusta.agrons.procedures.MinepediaNavigateExploreProcedure;
+import net.kapusta.agrons.procedures.AboutModshowProcedure;
 import net.kapusta.agrons.AgronsMod;
 
 import java.util.function.Supplier;
@@ -62,9 +64,17 @@ public class MinenetExploreButtonMessage {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
+		if (buttonID == 0) {
+
+			ShowmainProcedure.execute(world, x, y, z, entity);
+		}
 		if (buttonID == 2) {
 
 			MinepediaNavigateExploreProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 3) {
+
+			AboutModshowProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

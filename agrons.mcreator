@@ -352,6 +352,110 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tovarna"
+    },
+    {
+      "name": "Pecemeorecko1",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pecemeorecko_1"
+    },
+    {
+      "name": "Blokvolenevimco",
+      "type": "recipe",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blokvolenevimco"
+    },
+    {
+      "name": "Krabic",
+      "type": "block",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "krabic"
+    },
+    {
+      "name": "Pas",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pas"
+    },
+    {
+      "name": "Blokfujhnud",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blokfujhnud"
+    },
+    {
+      "name": "AboutModshow",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "about_modshow",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Showmain",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "showmain",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -379,7 +483,9 @@
       "block.agrons.hruska_blok": "Hruska Blok",
       "item.agrons.pif_puf_laser": "Title.projectile.laser",
       "block.agrons.computer": "Computer",
+      "block.agrons.krabic": "Krabica",
       "entity.agrons.robo_prase": "Robo Prase",
+      "block.agrons.pas": "Pas",
       "item.agrons.ozubene_kolo": "Ozubene Kolo",
       "entity.agrons.robo_farmar": "Robo Farmář",
       "block.agrons.metalore": "Metalová ruda",

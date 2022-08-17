@@ -48,7 +48,9 @@ public class AgronsModItems {
 	public static final RegistryObject<Item> METALORE = block(AgronsModBlocks.METALORE, AgronsModTabs.TAB_AGRONS);
 	public static final RegistryObject<Item> HRUSKA_BLOK = block(AgronsModBlocks.HRUSKA_BLOK, AgronsModTabs.TAB_AGRONS);
 	public static final RegistryObject<Item> ROBO_STEVE = REGISTRY.register("robo_steve_spawn_egg",
-			() -> new ForgeSpawnEggItem(AgronsModEntities.ROBO_STEVE, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+			() -> new ForgeSpawnEggItem(AgronsModEntities.ROBO_STEVE, -1, -1, new Item.Properties().tab(AgronsModTabs.TAB_AGRONS)));
+	public static final RegistryObject<Item> KRABIC = block(AgronsModBlocks.KRABIC, AgronsModTabs.TAB_AGRONS);
+	public static final RegistryObject<Item> PAS = block(AgronsModBlocks.PAS, AgronsModTabs.TAB_AGRONS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

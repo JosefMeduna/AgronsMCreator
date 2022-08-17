@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "agrons:block/krabic"
+    },
+    "facing=east": {
+      "model": "agrons:block/krabic",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "agrons:block/krabic",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "agrons:block/krabic",
+      "y": 270
+    }
+  }
+}
