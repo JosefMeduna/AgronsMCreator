@@ -24,6 +24,7 @@ import net.kapusta.agrons.block.MetaloreBlock;
 import net.kapusta.agrons.block.MetalblockBlock;
 import net.kapusta.agrons.block.KrabicBlock;
 import net.kapusta.agrons.block.HruskaBlokBlock;
+import net.kapusta.agrons.block.EmanNoFuncBlock;
 import net.kapusta.agrons.block.EmanBlock;
 import net.kapusta.agrons.block.ComputerBlock;
 import net.kapusta.agrons.AgronsMod;
@@ -42,6 +43,7 @@ public class AgronsModBlocks {
 	public static final RegistryObject<Block> ZATOCPAS = REGISTRY.register("zatocpas", () -> new ZatocpasBlock());
 	public static final RegistryObject<Block> TRAKTOR_SPAWN_CRATE = REGISTRY.register("traktor_spawn_crate", () -> new TraktorSpawnCrateBlock());
 	public static final RegistryObject<Block> EMAN = REGISTRY.register("eman", () -> new EmanBlock());
+	public static final RegistryObject<Block> EMAN_NO_FUNC = REGISTRY.register("eman_no_func", () -> new EmanNoFuncBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

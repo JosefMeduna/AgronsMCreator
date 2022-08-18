@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "agrons:blocks/eman",
+    "up": "agrons:blocks/eman",
+    "north": "agrons:blocks/eman",
+    "east": "agrons:blocks/eman",
+    "south": "agrons:blocks/eman",
+    "west": "agrons:blocks/eman",
+    "particle": "agrons:blocks/eman"
+  }
+}

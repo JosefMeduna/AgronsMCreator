@@ -56,6 +56,7 @@ public class AgronsModItems {
 	public static final RegistryObject<Item> ZATOCPAS = block(AgronsModBlocks.ZATOCPAS, AgronsModTabs.TAB_AGRONS);
 	public static final RegistryObject<Item> TRAKTOR_SPAWN_CRATE = block(AgronsModBlocks.TRAKTOR_SPAWN_CRATE, AgronsModTabs.TAB_AGRONS);
 	public static final RegistryObject<Item> EMAN = block(AgronsModBlocks.EMAN, AgronsModTabs.TAB_AGRONS);
+	public static final RegistryObject<Item> EMAN_NO_FUNC = block(AgronsModBlocks.EMAN_NO_FUNC, AgronsModTabs.TAB_AGRONS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

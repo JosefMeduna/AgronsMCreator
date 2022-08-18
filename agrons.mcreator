@@ -556,6 +556,46 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tresvolefujjjjjjjjjjjjj"
+    },
+    {
+      "name": "EmanOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eman_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EmanNoFunc",
+      "type": "block",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eman_no_func"
     }
   ],
   "variable_elements": [],
@@ -565,6 +605,7 @@
       "item.agrons.jet_pack_leggings": "Jet Pack Leggings",
       "item.agrons.ohryzek_hruska": "Ohryzek z hrusky",
       "block.agrons.metalblock": "Metal block",
+      "block.agrons.eman_no_func": "Block of Eman",
       "biome.agrons.trashworld": "Trash desert",
       "itemGroup.tabagrons_guns": "Agrons - Guns",
       "item.agrons.jet_pack_boots": "Jet Pack Boots",
@@ -580,7 +621,7 @@
       "entity.agrons.robo_steve": "Robo Steve",
       "entity.agrons.robo_kohout": "Robo Kohout",
       "item.agrons.jet_pack_helmet": "Jet Pack Heldddmet",
-      "block.agrons.eman": "EmanLMAO",
+      "block.agrons.eman": "Block of Eman",
       "block.agrons.trash": "Jump pad",
       "itemGroup.tabagrons": "Agrons",
       "item.agrons.robo_steve_spawn_egg": "Robo Steve Spawn Egg",

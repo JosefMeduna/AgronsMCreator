@@ -2,6 +2,7 @@
 package net.kapusta.agrons.block;
 
 import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -19,7 +20,8 @@ import java.util.Collections;
 
 public class TrashBlock extends Block {
 	public TrashBlock() {
-		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(1f, 10f).speedFactor(0.9f).jumpFactor(3f));
+		super(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.WOOD).sound(SoundType.METAL).strength(1f, 10f).speedFactor(0.9f)
+				.jumpFactor(3f));
 	}
 
 	@Override
